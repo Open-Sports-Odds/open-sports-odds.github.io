@@ -1,0 +1,233 @@
+body {
+    margin: 0;
+    background: #040404;
+      color: white;
+      font-family: "Kumbh Sans", sans-serif;
+      text-align: center;
+      background-image: url("../img/Gradient-Copy.png");
+      background-repeat: no-repeat;
+      background-size: auto;
+      background-position: center top;
+      background-size: 150% 110%;
+      /* overflow-y: hidden; */
+      text-underline-offset: 1pt;
+  }
+
+  #content {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+    padding: 12pt;
+    border-radius: 28pt;
+    width: 80%; 
+    margin: 0 auto;
+    box-shadow: 0 4pt 40pt 0 rgba(255, 255, 255, 0.40);
+    backdrop-filter: blur(20pt);
+  }
+
+  h1 {
+    margin: 16pt;
+    font-size: 64pt;
+    text-shadow: 0 0 40pt rgba(0, 0, 0, 0.40);
+  }
+
+  img {
+    height: 120pt;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* #rankings {
+    background: linear-gradient(to bottom,
+    rgba(255, 255, 255, 1),
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 0.6090909091),
+    rgba(0, 0, 0, 0.3927272727),
+    rgba(0, 0, 0, 0.1563636364)
+    );   
+} */
+
+.grid-item .games-controller table {
+    position: relative;
+}
+
+.grid-item .games-controller table::after {
+    content: "";
+    position: absolute;
+    background: white;
+}
+
+.grid-item .games-controller table::after {
+    top: 0;
+    left: 0;
+    width: 28pt; /* Adjust as needed */
+    height: 28pt; /* Adjust as needed */
+}
+
+{{Games CSS}}
+/* #game-0 {
+    background: linear-gradient(to bottom,
+    black,
+    rgba(0, 0, 0, 0.5337423313),
+    white
+    );
+}
+
+#game-1 {
+    background: linear-gradient(to bottom,
+    black,
+    rgba(0, 0, 0, 0.5337423313),
+    white
+    );
+}
+
+#game-2 {
+    background: linear-gradient(to bottom,
+    black,
+    rgba(0, 0, 0, 0.5337423313),
+    white
+    );
+} */
+
+table tr:first-child {
+    border-top: none;
+}
+
+table tr:last-child {
+    border-bottom: none;
+}
+
+tr {
+    border: 1pt solid black;
+    border-left: none; 
+    border-right: none; 
+    border-top: none;
+    padding: 4pt;
+    height: 40pt;
+}
+
+.games-container { 
+    width: 100%;
+    height: 100%;
+    border-radius: 28pt;
+    box-shadow: 0 4pt 40pt 0 rgba(0, 0, 0, 0.20);
+    overflow: hidden;
+    margin-bottom: 40pt;
+    background-color: white;
+}
+
+.team {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.team .logo {
+    height: 32pt;
+}
+
+.team a, .team p {
+    margin: 0;
+    margin-left: 4pt;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 16pt;
+    color: black;
+}
+
+.team p:hover {
+    cursor: pointer;
+}
+
+th p {
+    margin: 0;
+}
+
+p { 
+    text-align: center;
+    margin: auto;
+}
+
+table tr th {
+    background-color: white;
+}
+
+
+table tr td {
+    background-color: white;
+}
+
+table tr td:nth-child(2) {
+    background-color: transparent;
+    color: white;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(225pt, 1fr));
+    grid-gap: 24pt;
+    width: 85%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-container table {
+    width: 100%;
+    height: 100%;
+}
+
+.grid-item {
+    text-align: center;
+    height: 120pt;
+    font-size: 16pt;
+}
+
+.time {
+    justify-content: left;
+    background-color: white;
+}
+
+a {
+    color: white;
+    font-weight: bold;
+}
+
+#meth {
+    color: black;
+}
+
+h4 {
+    padding-top: 20pt;
+}
+
+footer { 
+    padding-bottom: 32pt;
+}
+
+footer p {
+    margin-top: 4pt;
+}
+
+footer p a:not(:hover) {
+    font-weight: normal;
+    text-decoration: none;
+}
+
+#social-group img {
+    filter: invert(1);
+    height: 48pt;
+    padding-top: 32pt;
+    padding-bottom: 0;
+  }
+
+  #bird {
+    padding-left: 8pt;
+  }
+
+  #gram {
+    padding-right: 8pt;
+  }

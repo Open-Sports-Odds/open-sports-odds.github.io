@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  background: #3935DA;
+    color: white;
+    font-family: "Kumbh Sans", sans-serif;
+    text-align: center;
+    background-repeat: no-repeat;
+    /* overflow-y: hidden; */
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/Gradient-Copy.png"); 
+  background-size: 160% 100%;
+  background-position-x: 60%;
+  background-position-y: 32pt;
+
+  transform: rotate(180deg);
+  z-index: -1;
+}
+p {
+    font-size: 28pt;
+    text-shadow: 0 0 20pt rgba(0, 0, 0, 0.40);
+}
+
+h1 {
+    text-align: center;
+    padding: 0;
+    margin: 0; 
+    font-size: 64pt;
+    text-shadow: 0 0 40pt rgba(0, 0, 0, 0.40);
+}
+
+img {
+    height: 120pt;
+}
+
+h2 {
+    font-size: 6vw;
+}
+
+#buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* height: 100%; */
+    margin: 0;
+    margin-right: 20pt;
+  }
+
+  .nav-button {
+    background: #767775;
+    flex-basis: 100%;
+    height: 30vh;
+    border-radius: 4vw;
+    margin-left: 20pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0 0 60pt 0 rgba(255, 255, 255, 0.40);
+    margin-top: 20pt;
+  }
+
+  .nav-button:active {
+    font-style: oblique;
+  }
+
+ .nav-button:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 4pt;
+    cursor: pointer;
+  }
+
+#nba {
+    background-color: #EFBC9B;
+}
+
+#mlb {
+    background-color: #E63946;
+}
+
+#nhl {
+    background-color: #040404;
+}
+
+#de {
+    background-color: #FDFDFD;
+    color: black;
+    box-shadow: inset 0 0 60pt 0 rgba(0, 0, 0, 0.40);
+}
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  a:active {
+    font-style: oblique;
+  }
+
+  #social-group img {
+    filter: invert(1);
+    height: 64pt;
+    padding: 24pt;
+    padding-top: 60pt;
+    padding-bottom: 0;
+  }
+
+  /* Normal Site is small, media is large */
+  @media (min-width: 700pt) {
+
+    body {
+        overflow-y: visible;
+    }
+
+    #buttons {
+      flex-wrap: nowrap;
+    }
+
+    .nav-button {
+      flex-basis: 33%;
+      height: 440pt;
+    }
+
+    h1 {
+        font-size: 8vw;
+        text-align: left;
+        margin: 0pt 20pt 0pt 60pt; 
+    }
+
+    p {
+      font-size: 16pt;
+    }
+
+    #social-group img {
+      height: 48pt;
+      padding: 16pt;
+      padding-top: 48pt;
+      padding-bottom: 0;
+    }
+
+  }

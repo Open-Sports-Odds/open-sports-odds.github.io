@@ -1,0 +1,225 @@
+#heading-title {
+    padding-top: 4pt;
+    text-shadow: 0 0 24pt rgba(255, 255, 255, 1);
+  }
+
+  #center-link {
+    padding: 12pt;
+  }
+
+  #header-links {
+    margin-top: -12pt;
+    font-size: 16pt;
+    letter-spacing: 1pt;
+    text-shadow: 0 0 24pt rgba(255, 255, 255, 1);
+    padding-bottom: 4pt;
+  }
+
+  #heading-link {
+    font-weight: 400;
+    text-decoration: none;
+  }
+
+h2 {
+    font-size: 52pt;
+    text-shadow: 0 0 40pt rgba(0, 0, 0, 0.4);
+    margin: 24pt;
+    margin-top: 40pt;
+}
+
+h3 {
+    font-size: 24pt;
+    margin-top: 0pt;
+    text-shadow: 0 0 40pt rgba(0, 0, 0, 0.4);
+    margin-bottom: 40pt;
+    margin-top: -20pt;
+}
+
+.rankings-container { 
+    width: 100%;
+    height: 100%;
+    border-radius: 28pt;
+    box-shadow: 0 4pt 40pt 0 rgba(0, 0, 0, 0.20);
+    overflow: hidden;
+    margin-bottom: 40pt;
+}
+
+#top-container { 
+    width: 80%;
+    min-width: 500pt;
+    margin: 0 auto;
+    margin-bottom: 16pt;
+}
+
+#rankings {
+    background: linear-gradient(to bottom, rgba(4, 4, 4, 1.0),
+rgba(4, 4, 4, 0.9203935505330787),
+rgba(4, 4, 4, 0.882391764850055),
+rgba(4, 4, 4, 0.861215664991859),
+rgba(4, 4, 4, 0.8507746713117763),
+rgba(4, 4, 4, 0.8455909385339888),
+rgba(4, 4, 4, 0.7377496892561407),
+rgba(4, 4, 4, 0.7285341643178518),
+rgba(4, 4, 4, 0.7059242660317573),
+rgba(4, 4, 4, 0.7014758144990461),
+rgba(4, 4, 4, 0.7014758144990461),
+rgba(4, 4, 4, 0.650006127343709),
+rgba(4, 4, 4, 0.6176537525603543),
+rgba(4, 4, 4, 0.5868699777664956),
+rgba(4, 4, 4, 0.5757304669035905),
+rgba(4, 4, 4, 0.5720663153656272),
+rgba(4, 4, 4, 0.5684266732024998),
+rgba(4, 4, 4, 0.5233416781919081),
+rgba(4, 4, 4, 0.5200451672764831),
+rgba(4, 4, 4, 0.5103026907792227),
+rgba(4, 4, 4, 0.4945554174471739),
+rgba(4, 4, 4, 0.48239876752857996),
+rgba(4, 4, 4, 0.4592619176835141),
+rgba(4, 4, 4, 0.4325466991124106),
+rgba(4, 4, 4, 0.4274977678962204),
+rgba(4, 4, 4, 0.4105985539468847),
+rgba(4, 4, 4, 0.4059907914777403),
+rgba(4, 4, 4, 0.3635282995745872),
+rgba(4, 4, 4, 0.3583445667967997),
+rgba(4, 4, 4, 0.32265891703576627),
+rgba(4, 4, 4, 0.30765917963621087),
+rgba(4, 4, 4, 0.3));
+}
+
+
+    #game-0 {
+        background: linear-gradient(to bottom, rgba(4, 4, 4, 0.3),
+        rgba(4, 4, 4, 0.6944553772180397), rgba(4, 4, 4, 0.6944553772180397));
+    }
+    
+
+@media (max-width: 700pt) {
+    #content {
+        width: 100%;
+        padding: 0; 
+    }
+
+    #top-container {
+        width: 95%;
+    }
+
+    .grid-container {
+        width: 95%;
+    }
+
+    table {
+        font-size: 32pt;
+    }
+
+    #rankings td:nth-child(5) {
+        display: none;
+    }
+
+    #rankings th:nth-child(5) {
+        display: none;
+    }
+
+    #rankings td:nth-child(6) {
+        display: none;
+    }
+
+    #rankings th:nth-child(6) {
+        display: none;
+    }
+
+    #rankings td:nth-child(7) {
+        display: none;
+    }
+
+    #rankings th:nth-child(7) {
+        display: none;
+    }
+    
+    #rankings tr td {
+        height: 100pt;
+    }
+
+    #rankings th {
+        font-size: 24pt;
+    }
+
+    #rankings {
+        table-layout: auto;
+    }
+
+    .team {
+        justify-content: left;
+        padding: 8pt;
+    }
+
+    .team a {
+        font-size: 28pt;
+        white-space: nowrap;
+        color: black;
+    }
+
+    .team img {
+        min-height: 80pt;
+    }
+
+    /* table, th, td {
+        border-left: 1pt solid transparent;
+        border-right: 1pt solid transparent; 
+    } */
+
+    td {
+        padding: 0;
+    }
+
+    .grid-item {
+        height: 280pt;
+        margin-top: 48pt;
+    }
+
+    td p {
+        background-color: white;
+        height: 60pt;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        border: none;
+    }
+
+    h4 {
+        font-size: 24pt;
+        padding: 32pt;
+        padding-bottom: 48pt;
+    }
+
+    footer {
+        font-size: 24pt;
+    }
+
+    body {
+        background-position: -240pt -600pt;
+    }
+
+    #heading-link img {
+        height: 160pt;
+    }
+
+    #heading-link h3 {
+        font-size: 40pt;
+    }
+    #header-links a {
+        font-size: 32pt;
+    }
+
+    #header-links {
+        margin-bottom: 64pt;
+    }
+
+    #center-link {
+        padding-left: 28pt; 
+        padding-right: 28pt;
+    }
+
+    h2 { 
+        padding-top: 32pt;
+    }
+}
