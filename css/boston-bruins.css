@@ -1,6 +1,29 @@
-#heading-title {
+  #team-headline {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+  }
+
+  #team-image {
+    -webkit-filter: drop-shadow(0pt 0pt 40pt rgba(0,0,0,0.2));
+    filter: drop-shadow(0pt 0pt 40pt rgba(0,0,0,0.2));
+  }
+
+  .headline-feature {
+    flex: 1;
+    padding: 8pt;
+  }
+  
+  #heading-title {
     padding-top: 4pt;
     text-shadow: 0 0 24pt rgba(255, 255, 255, 1);
+  }
+
+  .rankings-container tr td p {
+    font-weight: bold;
   }
 
   #center-link {
@@ -20,23 +43,39 @@
     text-decoration: none;
   }
 
-h2 {
-    font-size: 52pt;
+  h2 {
+    font-size: 44pt;
     text-shadow: 0 0 40pt rgba(0, 0, 0, 0.4);
     margin: 24pt;
-    margin-top: 40pt;
-}
+  }
 
 h3 {
-    font-size: 24pt;
+    font-size: 20pt;
     margin-top: 0pt;
     text-shadow: 0 0 40pt rgba(0, 0, 0, 0.4);
     margin-bottom: 40pt;
     margin-top: -20pt;
 }
 
+#chart {
+    margin: auto;
+    width: 60%;
+    background-color: white;
+    padding: 20pt;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+#playoff-table {
+    width: 60%;
+    min-width: min(300pt, 95%);
+}
+
 .rankings-container { 
-    width: 100%;
+    width: 80%;
+    min-width: 500pt;
+    margin: 0 auto;
     height: 100%;
     border-radius: 28pt;
     box-shadow: 0 4pt 40pt 0 rgba(0, 0, 0, 0.20);
@@ -44,63 +83,19 @@ h3 {
     margin-bottom: 40pt;
 }
 
-#top-container { 
-    width: 80%;
-    min-width: 500pt;
-    margin: 0 auto;
-    margin-bottom: 16pt;
-}
-
-#rankings {
-    background: linear-gradient(to bottom, rgba(4, 4, 4, 1),rgba(4, 4, 4, 1.0),
-rgba(4, 4, 4, 0.9101392882353949),
-rgba(4, 4, 4, 0.8727656204266458),
-rgba(4, 4, 4, 0.8519395327215438),
-rgba(4, 4, 4, 0.8365730617585785),
-rgba(4, 4, 4, 0.8264492691241543),
-rgba(4, 4, 4, 0.7305142817788951),
-rgba(4, 4, 4, 0.7214510769442677),
-rgba(4, 4, 4, 0.6992148895507995),
-rgba(4, 4, 4, 0.6948399648766377),
-rgba(4, 4, 4, 0.6948399648766377),
-rgba(4, 4, 4, 0.6442210017045162),
-rgba(4, 4, 4, 0.612403367710611),
-rgba(4, 4, 4, 0.5821284068800467),
-rgba(4, 4, 4, 0.571173016993509),
-rgba(4, 4, 4, 0.5675694289010176),
-rgba(4, 4, 4, 0.5639899450767033),
-rgba(4, 4, 4, 0.5196501437647421),
-rgba(4, 4, 4, 0.5164081196949086),
-rgba(4, 4, 4, 0.5068266730944715),
-rgba(4, 4, 4, 0.49133968079062024),
-rgba(4, 4, 4, 0.47938396377472825),
-rgba(4, 4, 4, 0.45662953461545064),
-rgba(4, 4, 4, 0.4303558823023018),
-rgba(4, 4, 4, 0.4253904030577985),
-rgba(4, 4, 4, 0.4087705101496184),
-rgba(4, 4, 4, 0.40423890773230475),
-rgba(4, 4, 4, 0.3624782631153044),
-rgba(4, 4, 4, 0.35738021039582657),
-rgba(4, 4, 4, 0.32228439592982205),
-rgba(4, 4, 4, 0.3075325838053752),
-rgba(4, 4, 4, 0.3));
-}
-
-
-    #game-0 {
-        background: linear-gradient(to bottom, rgba(4, 4, 4, 0.3),
-        rgba(4, 4, 4, 0.7177241688998566), rgba(4, 4, 4, 0.7177241688998566));
-    }
+@media (max-width: 900pt) {
     
-
-@media (max-width: 700pt) {
     #content {
         width: 100%;
         padding: 0; 
     }
 
-    #top-container {
+    .rankings-container {
         width: 95%;
+    }
+
+    #chart {
+         width: 90%;
     }
 
     .grid-container {
@@ -155,7 +150,6 @@ rgba(4, 4, 4, 0.3));
     .team a {
         font-size: 28pt;
         white-space: nowrap;
-        color: black;
     }
 
     .team img {
@@ -222,4 +216,51 @@ rgba(4, 4, 4, 0.3));
     h2 { 
         padding-top: 32pt;
     }
+
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(500pt, 500pt));
+        justify-content: center;
+        align-items: center;
+    }
+
 }
+
+#divison {
+    background: linear-gradient(to bottom, rgba(4, 4, 4, 0),rgba(4, 4, 4, 1.0),
+rgba(4, 4, 4, 0.7305142817788951),
+rgba(4, 4, 4, 0.6948399648766377));
+}
+
+#wild-card {
+    background: linear-gradient(to bottom, rgba(4, 4, 4, 0),rgba(4, 4, 4, 0.6948399648766377),
+rgba(4, 4, 4, 0.5639899450767033),
+rgba(4, 4, 4, 0.5196501437647421),
+rgba(4, 4, 4, 0.49133968079062024),
+rgba(4, 4, 4, 0.47938396377472825),
+rgba(4, 4, 4, 0.45662953461545064),
+rgba(4, 4, 4, 0.4303558823023018),
+rgba(4, 4, 4, 0.4087705101496184),
+rgba(4, 4, 4, 0.3624782631153044),
+rgba(4, 4, 4, 0.35738021039582657));
+}
+
+#depth {
+    background: linear-gradient(to bottom, rgba(4, 4, 4, 0.3),
+rgba(4, 4, 4, 0.3),
+rgba(4, 4, 4, 0.3),
+rgba(4, 4, 4, 0.3),
+rgba(4, 4, 4, 1.0),
+rgba(4, 4, 4, 1.0),
+rgba(4, 4, 4, 0.3));
+}
+
+#seeding {
+    background: linear-gradient(to bottom, rgba(4, 4, 4, 0.3),
+rgba(4, 4, 4, 0.3),
+rgba(4, 4, 4, 1.0),
+rgba(4, 4, 4, 0.3),
+rgba(4, 4, 4, 0.3),
+rgba(4, 4, 4, 0.3),
+rgba(4, 4, 4, 0.3));
+}
+

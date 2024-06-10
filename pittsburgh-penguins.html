@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+                <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-F8278BY52K"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-F8278BY52K');
+        </script>
+        <meta charset="UTF-8">
+
+        <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+        <link rel="apple-touch-icon" href="./img/apple-touch-icon.png" />
+        <link rel="apple-touch-icon" sizes="57x57" href="./img/apple-touch-icon-57x57.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="./img/apple-touch-icon-72x72.png" />
+        <link rel="apple-touch-icon" sizes="76x76" href="./img/apple-touch-icon-76x76.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="./img/apple-touch-icon-114x114.png" />
+        <link rel="apple-touch-icon" sizes="120x120" href="./img/apple-touch-icon-120x120.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="./img/apple-touch-icon-144x144.png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="./img/apple-touch-icon-152x152.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon-180x180.png" />
+
+        <link rel="stylesheet" type="text/css" href="./css/joint-teams.css">
+        <link rel="stylesheet" type="text/css" href="./css/pittsburgh-penguins.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght,YOPQ@100..900,40..300&display=swap" rel="stylesheet">
+        <title>Pittsburgh Penguins | Open Sports Odds</title>
+        
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation"></script>
+        <script src="./js/pittsburgh-penguins.js"></script>
+    </head>
+
+    <body>
+        <a id="heading-link" href="./index.html"><img src="./img/OSO.png"></img>
+            <h3 id="heading-title">Open Sports Odds</h3>
+        </a>
+        <div id="header-links">
+            <a href="./mlb.html">MLB</a>
+            <a href="./nba.html" id="center-link">NBA</a>
+            <a href="./de.html">DE</a>
+        </div>
+        <h1>Pittsburgh Penguins</h1>
+        <div id="content">
+
+            <div id="team-headline">
+
+                <img id="team-image" src="./img/nhl/pittsburgh-penguins-logo.png"></img>
+                
+                <div class="headline-feature">
+                    <h2>17th</h2>
+                    <h3>Power Rankings</h3>
+                </div>
+
+                <div class="headline-feature">
+                    <h2>88.0</h2>
+                    <h3>Projected Points</h3>
+                </div>
+
+                <div class="headline-feature">
+                    <h2>4.0</h2>
+                    <h3>Projected Goal Diff</h3>
+                </div>
+
+                <div class="headline-feature">
+                    <h2>ᜭ</h2>
+                    <h3>Projected Cup Odds</h3>
+                </div>
+                
+            </div>
+
+            <h2>Season Performance</h2>
+
+            <div id="chart" class="rankings-container">
+                <canvas id="myChart"></canvas> 
+            </div>
+
+            <h2>Playoff Seed Odds</h2>
+
+            <div class="rankings-container" id="playoff-table">
+                <table id="seeding">
+                    <tr>
+                        <th>Seed</th>
+                        <th>Odds</th>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <p>Win Division</p>
+                        </td>
+                        <td>ᜭ</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <p>2nd Division</p>
+                        </td>
+                        <td>ᜭ</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <p>3rd Division</p>
+                        </td>
+                        <td>ᜭ</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <p>Wild Card 1</p>
+                        </td>
+                        <td>ᜭ</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <p>Wild Card 2</p>
+                        </td>
+                        <td>ᜭ</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <p>Miss Playoffs</p>
+                        </td>
+                        <td>✓</td>
+                    </tr>
+                </table>
+            </div>
+
+            <h2>Playoff Depth Odds</h2>
+
+            <div class="rankings-container" id="playoff-table">
+                <table id="depth">
+                    <tr>
+                        <th>Seed</th>
+                        <th>Odds</th>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <p>Win Cup</p>
+                        </td>
+                        <td>ᜭ</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <p>Cup Final</p>
+                        </td>
+                        <td>ᜭ</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <p>Conference Final</p>
+                        </td>
+                        <td>ᜭ</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <p>Second Round</p>
+                        </td>
+                        <td>ᜭ</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <p>First Round</p>
+                        </td>
+                        <td>ᜭ</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <p>Miss Playoffs</p>
+                        </td>
+                        <td>✓</td>
+                    </tr>
+                </table>
+            </div>
+
+            <h2>Division Playoff Standings</h2>
+            
+            <div class="rankings-container">
+                <table id="divison">
+                    <tr>
+                        <th>Team</th>
+                        <th>Rating</th>
+                        <th>Wins</th>
+                        <th>Losses</th>
+                        <th>OT Losses</th>
+                        <th>Goal Diff</th>
+                        <th>Points</th>
+                    </tr>
+
+                    
+        <tr>
+            <td>
+                <div class="team">
+                    <img src="./img/nhl/new-york-rangers-logo.png" class="logo">
+                    <a>Rangers</a>
+                </div>
+            </td>
+            <td>1580</td>
+            <td>43</td>
+            <td>23</td>
+            <td>1</td>
+            <td>53</td>
+            <td>114</td>
+        </tr>
+
+        
+        <tr>
+            <td>
+                <div class="team">
+                    <img src="./img/nhl/carolina-hurricanes-logo.png" class="logo">
+                    <a>Hurricanes</a>
+                </div>
+            </td>
+            <td>1588</td>
+            <td>44</td>
+            <td>23</td>
+            <td>2</td>
+            <td>63</td>
+            <td>111</td>
+        </tr>
+
+        
+        <tr>
+            <td>
+                <div class="team">
+                    <img src="./img/nhl/new-york-islanders-logo.png" class="logo">
+                    <a>Islanders</a>
+                </div>
+            </td>
+            <td>1496</td>
+            <td>29</td>
+            <td>27</td>
+            <td>11</td>
+            <td>-17</td>
+            <td>94</td>
+        </tr>
+
+           
+                </table>
+            </div>
+
+            <h2>Conference Wild Card Standings</h2>
+            
+            <div class="rankings-container">
+                <table id="wild-card">
+                    <tr>
+                        <th>Team</th>
+                        <th>Rating</th>
+                        <th>Wins</th>
+                        <th>Losses</th>
+                        <th>OT Losses</th>
+                        <th>Goal Diff</th>
+                        <th>Points</th>
+                    </tr>
+
+                    
+        <tr>
+            <td>
+                <div class="team">
+                    <img src="./img/nhl/tampa-bay-lightning-logo.png" class="logo">
+                    <a>Lightning</a>
+                </div>
+            </td>
+            <td>1544</td>
+            <td>37</td>
+            <td>29</td>
+            <td>7</td>
+            <td>23</td>
+            <td>98</td>
+        </tr>
+
+        
+        <tr>
+            <td>
+                <div class="team">
+                    <img src="./img/nhl/detroit-red-wings-logo.png" class="logo">
+                    <a>Red Wings</a>
+                </div>
+            </td>
+            <td>1489</td>
+            <td>27</td>
+            <td>32</td>
+            <td>8</td>
+            <td>4</td>
+            <td>91</td>
+        </tr>
+
+        
+        <tr>
+            <td>
+                <div class="team">
+                    <img src="./img/nhl/washington-capitals-logo.png" class="logo">
+                    <a>Capitals</a>
+                </div>
+            </td>
+            <td>1485</td>
+            <td>32</td>
+            <td>31</td>
+            <td>6</td>
+            <td>-37</td>
+            <td>91</td>
+        </tr>
+
+        
+        <tr>
+            <td>
+                <div class="team">
+                    <img src="./img/nhl/pittsburgh-penguins-logo.png" class="logo">
+                    <a>Penguins</a>
+                </div>
+            </td>
+            <td>1511</td>
+            <td>32</td>
+            <td>32</td>
+            <td>9</td>
+            <td>4</td>
+            <td>88</td>
+        </tr>
+
+        
+        <tr>
+            <td>
+                <div class="team">
+                    <img src="./img/nhl/philadelphia-flyers-logo.png" class="logo">
+                    <a>Flyers</a>
+                </div>
+            </td>
+            <td>1457</td>
+            <td>30</td>
+            <td>33</td>
+            <td>8</td>
+            <td>-26</td>
+            <td>87</td>
+        </tr>
+
+        
+        <tr>
+            <td>
+                <div class="team">
+                    <img src="./img/nhl/buffalo-sabres-logo.png" class="logo">
+                    <a>Sabres</a>
+                </div>
+            </td>
+            <td>1497</td>
+            <td>33</td>
+            <td>37</td>
+            <td>5</td>
+            <td>2</td>
+            <td>84</td>
+        </tr>
+
+        
+        <tr>
+            <td>
+                <div class="team">
+                    <img src="./img/nhl/new-jersey-devils-logo.png" class="logo">
+                    <a>Devils</a>
+                </div>
+            </td>
+            <td>1467</td>
+            <td>33</td>
+            <td>39</td>
+            <td>3</td>
+            <td>-19</td>
+            <td>81</td>
+        </tr>
+
+        
+        <tr>
+            <td>
+                <div class="team">
+                    <img src="./img/nhl/ottawa-senators-logo.png" class="logo">
+                    <a>Senators</a>
+                </div>
+            </td>
+            <td>1476</td>
+            <td>25</td>
+            <td>41</td>
+            <td>4</td>
+            <td>-26</td>
+            <td>78</td>
+        </tr>
+
+        
+        <tr>
+            <td>
+                <div class="team">
+                    <img src="./img/nhl/montreal-canadiens-logo.png" class="logo">
+                    <a>Canadiens</a>
+                </div>
+            </td>
+            <td>1431</td>
+            <td>20</td>
+            <td>36</td>
+            <td>8</td>
+            <td>-53</td>
+            <td>76</td>
+        </tr>
+
+        
+        <tr>
+            <td>
+                <div class="team">
+                    <img src="./img/nhl/columbus-blue-jackets-logo.png" class="logo">
+                    <a>Blue Jackets</a>
+                </div>
+            </td>
+            <td>1435</td>
+            <td>21</td>
+            <td>43</td>
+            <td>10</td>
+            <td>-63</td>
+            <td>66</td>
+        </tr>
+
+                      
+                </table>
+            </div>
+
+
+            <h2>Upcoming Games</h2>
+
+            <div class="grid-container">
+                
+            </div>
+
+            <h4>Based on 10,000 simulations. View our methodology and code on <a href="https://github.com/jaredstef" id="meth">Github</a>.</h4>
+
+        </div>
+    </body>
+
+    <footer>
+        <div id="social-group">
+            <a href="https://instagram.com/opensportsodds" target="_blank"><img src="./img/instagram.png" id="gram"></img></a>
+            <a href="https://twitter.com/opensportsodds" target="_blank"><img src="./img/twitter.png" id="bird"></img></a>
+        </div>
+        <p>From Philly, with love 🤍&nbsp;</p>
+        <p><a href="./tos.html">TOS + Privacy Policy</a></p>
+    </footer>
+
+</html>
