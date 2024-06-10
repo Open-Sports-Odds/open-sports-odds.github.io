@@ -1,6 +1,29 @@
-#heading-title {
+  #team-headline {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+  }
+
+  #team-image {
+    -webkit-filter: drop-shadow(0pt 0pt 40pt rgba(0,0,0,0.2));
+    filter: drop-shadow(0pt 0pt 40pt rgba(0,0,0,0.2));
+  }
+
+  .headline-feature {
+    flex: 1;
+    padding: 8pt;
+  }
+  
+  #heading-title {
     padding-top: 4pt;
     text-shadow: 0 0 24pt rgba(255, 255, 255, 1);
+  }
+
+  .rankings-container tr td p {
+    font-weight: bold;
   }
 
   #center-link {
@@ -20,23 +43,39 @@
     text-decoration: none;
   }
 
-h2 {
-    font-size: 52pt;
+  h2 {
+    font-size: 44pt;
     text-shadow: 0 0 40pt rgba(0, 0, 0, 0.4);
     margin: 24pt;
-    margin-top: 40pt;
-}
+  }
 
 h3 {
-    font-size: 24pt;
+    font-size: 20pt;
     margin-top: 0pt;
     text-shadow: 0 0 40pt rgba(0, 0, 0, 0.4);
     margin-bottom: 40pt;
     margin-top: -20pt;
 }
 
+#chart {
+    margin: auto;
+    width: 60%;
+    background-color: white;
+    padding: 20pt;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+#playoff-table {
+    width: 60%;
+    min-width: min(300pt, 95%);
+}
+
 .rankings-container { 
-    width: 100%;
+    width: 80%;
+    min-width: 500pt;
+    margin: 0 auto;
     height: 100%;
     border-radius: 28pt;
     box-shadow: 0 4pt 40pt 0 rgba(0, 0, 0, 0.20);
@@ -44,27 +83,19 @@ h3 {
     margin-bottom: 40pt;
 }
 
-#top-container { 
-    width: 80%;
-    min-width: 500pt;
-    margin: 0 auto;
-    margin-bottom: 16pt;
-}
-
-#rankings {
-    {{Rankings Gradient}}
-}
-
-{{Games CSS}}
-
-@media (max-width: 700pt) {
+@media (max-width: 900pt) {
+    
     #content {
         width: 100%;
         padding: 0; 
     }
 
-    #top-container {
+    .rankings-container {
         width: 95%;
+    }
+
+    #chart {
+         width: 90%;
     }
 
     .grid-container {
@@ -119,7 +150,6 @@ h3 {
     .team a {
         font-size: 28pt;
         white-space: nowrap;
-        color: black;
     }
 
     .team img {
@@ -186,4 +216,29 @@ h3 {
     h2 { 
         padding-top: 32pt;
     }
+
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(500pt, 500pt));
+        justify-content: center;
+        align-items: center;
+    }
+
 }
+
+#divison {
+    {{Div CSS}}
+}
+
+#wild-card {
+    {{WC CSS}}
+}
+
+#depth {
+    {{Playoff CSS}}
+}
+
+#seeding {
+    {{Seed CSS}}
+}
+
+{{Games CSS}}
