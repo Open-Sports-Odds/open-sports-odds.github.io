@@ -246,7 +246,7 @@ rgba(4, 4, 4, 0.3546263666016491));
 
 #depth {
     background: linear-gradient(to bottom, rgba(4, 4, 4, 0.3),
-rgba(4, 4, 4, 0.9724200000000001),
+rgba(4, 4, 4, 0.97522),
 rgba(4, 4, 4, 1.0),
 rgba(4, 4, 4, 1.0),
 rgba(4, 4, 4, 1.0),
@@ -264,3 +264,9 @@ rgba(4, 4, 4, 0.3),
 rgba(4, 4, 4, 0.3));
 }
 
+
+    #game-0 {
+        background: linear-gradient(to bottom, rgba(4, 4, 4, 0.7265228821402349),
+        rgba(4, 4, 4, 0.3), rgba(4, 4, 4, 0.3));
+    }
+    
