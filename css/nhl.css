@@ -87,6 +87,11 @@ rgba(4, 4, 4, 0.3));
 }
 
 
+    #game-0 {
+        background: linear-gradient(to bottom, rgba(4, 4, 4, 0.3),
+        rgba(4, 4, 4, 0.7021800740476429), rgba(4, 4, 4, 0.7021800740476429));
+    }
+    
 
 @media (max-width: 700pt) {
     #content {
